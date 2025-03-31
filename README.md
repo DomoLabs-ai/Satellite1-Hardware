@@ -91,6 +91,8 @@ The Satellite 1 Developer Kit is the first version of our private voice assistan
 ### Shim
 * rev1/R2025.02.25 - Prototype
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
