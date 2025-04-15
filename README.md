@@ -30,9 +30,9 @@
 <h3 align="center">Satellite1</h3>
 
   <p align="center">
-    A Private Voice Assistant & Multi-sensor with Room Presence Detection, Music Streaming Capablities & Smart Home Control.
+    Schematics and 3d Files relating to the circuit boards of the Satellite1 AI-Powered Voice Assistant and its accessories.
     <br />
-    <a href="https://docs.futureproofhomes.net"><strong>Explore the docs (Coming Soon) »</strong></a>
+    <a href="https://docs.futureproofhomes.net"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://www.youtube.com/@futureproofhomes">View Demo</a>
@@ -49,20 +49,8 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li> <a href="#about-the-project">About The Project</a> </li>
+    <li> <a href="#revisions">Revisions</a> </li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -74,106 +62,36 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-The Satellite1 is a completely private and and open-source voice assistant/multisensor with advanced audio processing and music streaming capabilities. It focuses on controlling your smart home via the [Home Assistant platform](https://www.home-assistant.io/) and their incredible [Assist voice control pipeline](https://www.home-assistant.io/voice_control/). With some extra GPU-power and software you can control your home via your own local AI/LLM.
-
-In Q4 2024 you will be able to purchase all the parts necessary to build your own Satellite1 at [FutureProofHomes.net](https://futureproofhomes.net).
-
-The Satellite1 is designed to sit on a desk and be used with the built-in speaker or you can plug into external amplified speakers via the 3.5mm headphone jack.  In 2025 we will introduce an official enclosure and a stealth in-ceiling mount with a high-powered amplifier so that the Satellite1 can be used with in-ceiling speakers.  We highly recommend the in-ceiling approach as the user-experience is amazing.
-
-[![Satellite1][combo_render]](https://futureproofhomes.net/)
-<i>Enclosure w/ speaker mesh coming in 2025.</i>
-
-## Why Open Source?
-The Satellite1 is a powerful device - and with great power, comes great responsibility.  We believe it would be irresponsible to ask our customers to **_trust_** that our hardware and software protect your privacy.  Instead, you can audit the product yourself.  You can also build with us!  Please contribute to the project (and perhaps even join the team).
-
-NOTE: All firmware and schematics will be be open-source upon launch.  The actual Kicad project files will operate under a delayed open source model ([DOSP](https://opensource.org/delayed-open-source-publication)) to ensure the FutureProofHomes team can keep the lights on.  Thanks for your understanding as we get some wind beneath our wings!  
-
-## Why Purchase from FutureProofHomes?
-Put simply, your purchase helps fund our team and further innovation towards our roadmap.  Also, purchasing from us ensures you get top-quality products that are tested, fully-functional, in-stock (as often as possible) and received community leadership.  You can purchase Satellite1 components individually, or purchase the entire devkit as a package.  Help us, help you!
-
-## Key Hardware Features
-- [ ] ESP32-S3 n16r8 SoC
-- [ ] Far-Field Microphone Array with Premium XMOS XU316 Noise Reduction and Echo Cancellation
-- [ ] Power DAC capable of 25W x 1 @ 8Ohm
-- [ ] DAC 3.5mm Headphone Line Out
-- [ ] Hardware Mute Button
-- [ ] Volume Up/Down & Action Buttons
-- [ ] 12 NeoPixel LEDs
-- [ ] Temperature/Humidity/Light Sensor on-board
-- [ ] USB-C Power Delivery for easy power input
-- [ ] Expandable GPIO for Hackability and Additional Functionality
-
-## Key Software Features
-- [ ] Easily Modifiable & Flashable Firmware via [ESPHome](https://esphome.io/index.html).
-- [ ] On-Device WakeWord support.  Choose your own WakeWord or [create your own Wakeword](https://www.home-assistant.io/voice_control/create_wake_word/).  "Hey, Jarvis", "Alexa", "Alfred".
-- [ ] Supports TTS Announcements via Home Assistant
-- [ ] Supports MP3 Music Streaming via HA Media Browser or [Music Assistant](https://music-assistant.io/)
-- [ ] Supports Bluetooth Room Presence Detection via [Bermuda](https://github.com/agittins/bermuda?tab=readme-ov-file) (Apple Watches Included)
-- [ ] Exposes All Sensor Data Like Any Good Multi-Sensor Should
-
-## Interoperability
-- [ ] The Satellite1 HAT will work with ESP32, Raspberry Pi and Mac/PC USB connection.
-
+The Satellite 1 Developer Kit is the first version of our private voice assistant hardware and is the foundation for the larger ecosystem we're building. The Dev Kit comprises of two components that we call "the HAT" (round board) and "the Core" (rectangular board). When you connect these two components together you get the Satellite1 Dev Kit.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-### Built With
-
-* [![KiCad][kicad.org]][kicad-url]
-* [![ESPHome][esphome.io]][esphome-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-- [Docs.FutureProofHomes.net](https://docs.futureproofhomes.net) is going live soon.
-- [FutureProofHomes.net](https://futureproofhomes.net) main website is live and more info and product stock are coming in soon!
-
-<!-- This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps. -->
-
-### Prerequisites
-
-- For smart home control you'll need a functional Home Assistant server.  [Installation instructions here.](https://www.home-assistant.io/installation/)
-- For AI/LLM interactions you'll need a GPU, Instruct LLM, and custom software, plus some hacks (at the time of writing this).  This will become easier in the future.  Stay tuned.
-
-<!-- This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ``` -->
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-- [FutureProofHomes YouTube](https://www.youtube.com/@futureproofhomes) tutorials are coming soon on our channel
-
-<!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources. -->
-
-_For more examples, please refer to the [Documentation](https://docs.futureproofhomes.net)_
+<!-- REVISIONS -->
+## Revisions
+### Hat
+* rev6.1/R2025.03.18 - Public Batch #2
+* rev6/R2025.01.31 - Prototype
+* rev5/R2024.12.25 - Prototype
+* rev4.1/R2024.12.06 - Public Batch #1
+* rev4/R2024.11.07 - Prototype
+* rev3/R2024.09.06 - Prototype
+* rev2/R2024.08.02. - Prototype
+### Core
+* rev5.1/R2025.03.18 - Public Batch #2
+* rev5/R2025.02.24 - Prototype
+* rev4.2/R2025.01.31 - Prototype
+* rev4.1/R2024.12.06 - Public Batch #1
+* rev4/R2024.11.07 - Prototype
+* rev3/R2024.09.06 - Prototype
+* rev2/R2024.08.02 - Prototype
+### Shoe
+* rev1/R2025.01.31 - Prototype
+* rev0/R2024.12.17 - Prototype
+### Shim
+* rev1/R2025.02.25 - Prototype
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] FutureProofHomes Sat1 PCB Dev Kit
-- [ ] Sat1 Enclosure
-- [ ] Sense360 Ceiling Mount & Amplifier1
-- [ ] AI Base Station
-
-Learn more on our website: [FutureProofHomes.net](https://futureproofhomes.net)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -190,7 +108,6 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- LICENSE -->
